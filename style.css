@@ -47,11 +47,11 @@ header {
 #hero h1{
   font-size: 3.5em;
   font-family: "Merriweather", serif;
-  font-weight: 100;
   color: #C88239;
 }
-#hero p{
-  font-size: 2em;
+#hero h2{
+  font-size: 1.5em;
+  font-weight: 100;
   padding-top: 0.5em;
   color: #4d4d4d;
   font-family: "Special Elite", serif;
@@ -158,6 +158,11 @@ footer p:nth-child(2) {
   }
   #bold {
     font-size: 1.5em;
+  }
+}
+@media(max-height: 48em){
+  .social {
+    height: 3em;
   }
 }
 @media (max-width: 40em){
