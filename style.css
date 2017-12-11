@@ -15,7 +15,7 @@ a:hover {
 /* SET UP PAGE GRID */
 #gridParent {
   display: grid;
-   grid-template-rows: auto 1em auto 1em auto;
+   grid-template-rows: auto .5em auto 1em auto;
 }
 
 header{
@@ -45,7 +45,7 @@ header {
   align-items: center;
 }
 #hero h1{
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: "Merriweather", serif;
   font-weight: 100;
   color: #C88239;
@@ -57,7 +57,7 @@ header {
   font-family: "Special Elite", serif;
 }
 #logo img{
-  height: 9em;
+  height: 8em;
   transform: rotate(-14deg);
 }
 /* ====== SPLASH PAGE ====== */
@@ -70,7 +70,6 @@ header {
 }
 #potomac {
 width: 100vw;
-  height: 20em;
 }
 
 nav{
@@ -80,7 +79,7 @@ nav{
   width: 65vw;
   padding-top: 2em;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 #bestBox {
@@ -89,18 +88,19 @@ nav{
   display: flex;
   flex-direction: column;
 }
+
 #best {
  font-family: 'Merriweather';
   text-align: center;
   margin-top: 2em;
   font-size: 1.5em;
   color: #5F572F;
-
 }
 
 #bold {
+  font-family: 'Merriweather';
   font-style: italic;
-  font-size: 1em;
+  font-size: 1.25em;
   text-align: right;
   margin-top: 1em;
   color: #5F572F;
