@@ -38,6 +38,13 @@ header {
   align-items: center;
   margin: 0 auto;
 }
+
+header {
+  background-image: url(assets/HeaveyLogoSmall4.jpg);
+  background-repeat: no-repeat;
+  height: 9em;
+  background-size: contain;
+}
 #hero{
   display: flex;
   flex-direction: column;
@@ -56,9 +63,8 @@ header {
   color: #4d4d4d;
   font-family: "Special Elite", serif;
 }
-#logo img{
-  height: 8em;
-  transform: rotate(-14deg);
+#logo{
+  width: 15em;
 }
 /* ====== SPLASH PAGE ====== */
 #splash {
@@ -164,6 +170,11 @@ footer p:nth-child(2) {
   .social {
     height: 3em;
   }
+}
+
+@media(max-width: 62.5em){
+
+
 }
 @media (max-width: 40em){
 
