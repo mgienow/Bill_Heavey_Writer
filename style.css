@@ -67,7 +67,6 @@ header {
 #hero h2{
   font-size: 1.5em;
   font-weight: 100;
-  padding-top: 0.5em;
   color: #4d4d4d;
   font-family: "Special Elite", serif;
 }
@@ -78,7 +77,10 @@ header {
 #socialIcons {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  height: 50%;
+}
+.social {
+  height: 3em;
 }
 /* ====== SPLASH PAGE ====== */
 #splash {
@@ -86,7 +88,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  align-items: center;
 }
 #potomac {
 width: 100vw;
@@ -130,8 +132,6 @@ nav{
 /*   ====== FOOTER ======== */
 #designedBy {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
 }
 footer a{
   color: #C88239;
@@ -139,12 +139,9 @@ footer a{
 footer {
   height: 3em;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: flex-end;
   width: 90%;
   margin: 0 auto;
-
 }
 
 footer p{
@@ -180,9 +177,19 @@ footer p:nth-child(2) {
     font-size: 1.5em;
   }
 }
-@media(max-height: 48em){
+/* TABLET LANDSCAPE */
+@media(max-width: 51em){
   .social {
-    height: 3em;
+    height: 2.5em;
+  }
+  #logo {
+    width: 10em;
+  }
+  header {
+    height: 9em;
+  }
+  #bestBox {
+    width: 80%;
   }
 }
 
@@ -207,8 +214,34 @@ footer p:nth-child(2) {
       width: 75vw;
     }
 }
-@media (max-width: 40em){
 
+/* IPHONE 7 PLUS */
+@media (max-width: 25.875em){
+  header {
+    background: none;
+    grid-template-rows: 1em auto 1em auto 1em;
+    height: 11em;
+  }
+  #logo{
+    width: 1em;
+    grid-row: 1;
+  }
+  #hero {
+    grid-row: 4 /5;
+    grid-column: 3;
+  }
+  #socialIcons {
+    grid-row: 2 / 3;
+    grid-column: 3;
+    justify-content: center;
+  }
+  #potomac{
+    width: 150%;
+    height: 15em;
+  }
+  nav {
+    width: 100vw;
+  }
   footer{
     flex-direction: column;
     padding: 0.5em 0;
@@ -222,10 +255,11 @@ footer p:nth-child(2) {
   #designedBy {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: 40em){
+@media (min-width: 26em){
   #noPipe::after {
     content: "|";
     padding-left: 5px;
