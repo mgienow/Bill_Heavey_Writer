@@ -84,7 +84,6 @@ header {
 }
 /* ====== SPLASH PAGE ====== */
 #splash {
-  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -192,7 +191,7 @@ footer p:nth-child(2) {
     width: 80%;
   }
 }
-
+/* MEDIUM LAPTOP SCREEN */
 @media(max-width: 62.5em){
   header {
     background-size: 8em;
@@ -222,25 +221,38 @@ footer p:nth-child(2) {
     grid-template-rows: 1em auto 1em auto 1em;
     height: 11em;
   }
+  header{
+    grid-row: 3 / 4;
+  }
+  #splash {
+    grid-row: 1/ 2;
+    flex-direction: column-reverse;
+  }
+  #bestBox {
+    order: -2;
+  }
   #logo{
     width: 1em;
     grid-row: 1;
   }
   #hero {
-    grid-row: 4 /5;
+    grid-row: 2 /3;
     grid-column: 3;
   }
   #socialIcons {
-    grid-row: 2 / 3;
+    grid-row: 4 / 5;
     grid-column: 3;
     justify-content: center;
   }
   #potomac{
     width: 150%;
     height: 15em;
+    order: 1;
   }
   nav {
     width: 100vw;
+    order: 2;
+    margin-bottom: 1em;
   }
   footer{
     flex-direction: column;
