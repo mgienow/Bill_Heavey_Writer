@@ -82,15 +82,10 @@ footer {
 .social {
   height: 3em;
 }
-/* ====== SPLASH PAGE ====== */
-/* #splash {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-} */
+
 #potomac {
 width: 100vw;
+margin-top: 1em;
 }
 
 nav{
